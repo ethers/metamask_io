@@ -3,7 +3,7 @@ MAINTAINER kumavis
 
 # setup app dir
 RUN mkdir -p /www/
-COPY /www/ /www/
+COPY ./www/ /www/
 ENV SERVE_DIRECTORY=/www/
 
 # expose server
