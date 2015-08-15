@@ -4,6 +4,16 @@
 
 #hero-logo {
   max-width: 100%;
+  max-height: calc(100vh - 130px);
+}
+
+#about video {
+  max-width: 100%;
+}
+
+#team img {
+  max-width: 200px;
+  max-height: 200px;
 }
 
 .jumbotron {
