@@ -1,0 +1,23 @@
+{
+  "name": "metamask_io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify index.js -o www/assets/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MetaMask/metamask_io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MetaMask/metamask_io/issues"
+  },
+  "homepage": "https://github.com/MetaMask/metamask_io#readme",
+  "dependencies": {
+    "metamask-logo": "^1.1.5"
+  }
+}

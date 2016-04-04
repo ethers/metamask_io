@@ -1,5 +1,14 @@
+#logo-container {
+  margin: 10px;
+}
+
 .pad {
   padding-top: 20px;
+}
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 #hero-logo {
