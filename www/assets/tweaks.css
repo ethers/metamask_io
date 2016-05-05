@@ -1,3 +1,7 @@
+* {
+  cursor: none;
+}
+
 #logo-container {
   margin: 10px;
 }
