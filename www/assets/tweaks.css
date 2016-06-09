@@ -1,0 +1,46 @@
+#logo-container {
+  margin: 10px;
+}
+
+.pad {
+  padding-top: 20px;
+}
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#hero-logo {
+  max-width: 100%;
+  max-height: calc(100vh - 130px);
+}
+
+#about iframe {
+  max-width: 100%;
+  width: 100%;
+  height: 600px;
+  max-height: 100vw;
+}
+
+#team img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.footer-links {
+  padding-bottom: 20px;
+}
+
+.jumbotron {
+  padding: 18px;
+}
+
+a {
+  color: #df691a;
+}
+
+a:hover {
+  color: #DFB21A;
+  text-decoration: none;
+}
