@@ -624,6 +624,10 @@ form.subscribe {
     float: right; }
 
 .carousel {
+  height: 100%;
+  width: 100%;
+  max-height: 500px;
+  min-height: 350px;
   position: relative;
   margin-top: 40px;
   padding-bottom: 60px; }
@@ -631,9 +635,9 @@ form.subscribe {
 .carousel-inner {
   position: relative;
   overflow: hidden;
-  width: 975px;
-  height: 446px;
   background-image: url("../img/lines.png");
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   margin: 0 auto; }
   .carousel-inner > .item {
@@ -671,7 +675,9 @@ form.subscribe {
     .carousel-inner > .item > img,
     .carousel-inner > .item > a > img {
       line-height: 1;
-      height: 424px;
+      height: 40vw;
+      max-height: 475px;
+      min-height: 320px;
       margin-top: 12px; }
   .carousel-inner > .active,
   .carousel-inner > .next,
@@ -812,9 +818,13 @@ form.subscribe {
 #about {
   padding: 40px 0; }
   #about img {
-    margin-left: 15px; }
+    width: 55vw;
+    min-width: 330px; }
   #about .row {
-    text-align: left; }
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
     #about .row .columns:first-child p {
       margin: 15px 0 15px 15%; }
     #about .row .columns:last-child p {
@@ -832,13 +842,19 @@ form.subscribe {
   background-repeat: no-repeat; }
   #built-by h2 {
     margin: 10px 0; }
+  #built-by .row {
+    display: flex;
+    justify-content: center; }
   #built-by .bio {
     max-width: 360px; }
+    #built-by .bio img {
+      width: 22.5vh; }
     #built-by .bio h3 {
       color: #3e464a;
       font-size: 1.5em; }
     #built-by .bio.left {
       padding: 15px 35px 15px 0;
+      margin-left: 4px;
       float: right; }
     #built-by .bio.right {
       padding: 15px 0;
@@ -852,6 +868,10 @@ form.subscribe {
     font-weight: 600;
     font-size: 26px;
     margin-bottom: 40px; }
+  #support .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline; }
   #support .supporter.left {
     float: right; }
   #support .supporter.right {
@@ -866,11 +886,29 @@ footer {
   footer .status {
     margin-top: 10px; }
     footer .status p {
-      padding-left: 60px;
+      margin-left: 8vw;
       font-size: 0.95em;
       line-height: 1.4em; }
+  footer .form-container {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row; }
+    footer .form-container form {
+      -webkit-column-break-inside: avoid;
+      /* Chrome, Safari, Opera */
+      page-break-inside: avoid;
+      /* Firefox */
+      break-inside: avoid;
+      /* IE 10+ */
+      display: flex;
+      justify-content: space-between; }
+      footer .form-container form button {
+        margin-left: 25px; }
   footer .social-wrap {
-    text-align: center; }
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
     footer .social-wrap img {
       width: 32px;
       margin: 0 auto; }
